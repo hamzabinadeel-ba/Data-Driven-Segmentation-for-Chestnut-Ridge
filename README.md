@@ -6,11 +6,11 @@ This project applies a data-driven customer segmentation framework to a multi-ch
 
 Chestnut Ridge operates across multiple product categories and sales channels. As customer needs diversified, a one-size-fits-all marketing strategy became ineffective. The objective of this project is to:
 
-*Identify meaningful customer segments
+- Identify meaningful customer segments
 
-*Understand differences in preferences and demographics
+* Understand differences in preferences and demographics
 
-Evaluate which segments are most attractive to target
++ Evaluate which segments are most attractive to target
 
 Recommend data-backed marketing priorities
 
