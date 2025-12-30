@@ -1,0 +1,146 @@
+# Hamza Bin Adeel/740099526
+
+# Task 1:
+
+library(tidyverse)
+
+retailer <- read_csv("retailer.csv")
+
+glimpse(retailer)
+
+summary(retailer)
+
+# Task 2:
+
+retailer_norm <- scale(retailer[, -1]) %>% as_tibble()
+
+mean(retailer_norm$income)
+
+sd(retailer_norm$low_prices)
+
+summary(retailer_norm)
+
+# Task 3: 
+
+store_attributes <- retailer %>%
+
+select(variety_of_choice, electronics, furniture, quality_of_service, low_prices, return_policy)
+
+store_attributes_norm <- scale(store_attributes) %>% as_tibble()
+
+mean(store_attributes_norm$low_prices)
+
+sd(store_attributes_norm$quality_of_service)
+
+summary(store_attributes_norm)
+
+# Task 4:
+
+distances <- dist(store_attributes_norm, method = "euclidean")
+
+as.matrix(distances)[1:5, 1:5]
+
+# Task 5: 
+
+set.seed(123)
+
+# Task 6: 
+
+hc <- hclust(distances, method = "ward.D2")
+
+# Task 7: 
+
+plot(hc)
+
+# Task 8:
+
+rect.hclust(hc, k = 3, border = "red")
+
+# Task 9: 
+
+hc3 <- cutree(hc, k = 3)
+
+table(hc3)
+
+# Task 10: 
+
+set.seed(123)
+
+kmeans_3 <- kmeans(store_attributes_norm,
+                   centers = 3,
+                   iter.max = 1000,
+                   nstart = 100)
+
+kmeans_3$size
+
+# Task 11:
+
+hc4 <- cutree(hc, k = 4)
+
+plot(hc, labels = FALSE, main = "Dendrogram with 4 Clusters")
+
+rect.hclust(hc, k = 4, border = "red")
+
+hc4 <- cutree(hc, k = 4)
+
+table(hc4)
+
+# Task 12:
+
+set.seed(123)
+
+kmeans_4 <- kmeans(store_attributes_norm,
+                   centers = 4,
+                   iter.max = 1000,
+                   nstart = 100)
+
+table(kmeans_4$cluster)
+
+# Task 13:
+
+library(NbClust)
+
+library(car)
+
+vif(lm(return_policy ~ ., data = store_attributes_norm))
+
+set.seed(1990)
+
+NbClust(data = store_attributes_norm[, 1:6], min.nc = 3,  max.nc = 15, index = "all", method = "ward.D2") $Best.ncBest
+
+# Task 14: 
+
+library(flexclust)
+
+hc4 <- cutree(hc, k = 4)
+
+store_attributes_norm %>%
+mutate(cluster = factor(hc4)) %>%
+group_by(cluster) %>%
+mutate(n = n()) %>%
+summarise_all(~ mean(.x)) %>%
+mutate(prop = n / sum(n)) %>%
+print(width = Inf)
+
+hc4_flex <- as.kcca(hc, store_attributes_norm, k = 4)
+
+barchart(hc4_flex)
+
+# Task 15:
+
+retailer %>%
+  mutate(cluster = factor(hc4)) %>%
+  group_by(cluster) %>%
+  summarise(
+    mean_income = mean(income),
+    mean_age = mean(age)
+  )
+
+
+
+
+
+
+
+
+
