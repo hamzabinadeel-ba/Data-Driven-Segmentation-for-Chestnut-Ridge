@@ -18,7 +18,7 @@ Chestnut Ridge operates across multiple product categories and sales channels. A
 
 The dataset contains 200 customer survey responses with the following variables:
 
-## 1. **Store Attribute Ratings (1–10 scale):**
+## **Store Attribute Ratings (1–10 scale):**
 
 * Variety of choice
 
@@ -32,7 +32,7 @@ The dataset contains 200 customer survey responses with the following variables:
 
 - Return policy
 
-## 2. **Demographics:**
+## **Demographics:**
 
 + Annual income (USD, thousands)
 
@@ -82,7 +82,7 @@ Using the McKinsey GE Matrix, segments were evaluated on:
 
 2. Segment attractiveness (size, growth, profitability)
 
-## **Strategic Recommendations:**
+## **Recommendations:**
 
 - **Invest & Grow:** Value-Conscious Traditionalists
 
