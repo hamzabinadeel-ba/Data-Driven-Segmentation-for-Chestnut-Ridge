@@ -1,8 +1,8 @@
-**Project Overview**
+# **Project Overview**
 
 This project applies a data-driven customer segmentation framework to a multi-channel retail brand called Chestnut Ridge. Using survey-based customer data, the analysis identifies distinct customer segments and translates statistical insights into actionable marketing strategy. The project combines unsupervised machine learning, rigorous validation and strategic evaluation tools to support informed targeting decisions.
 
-**Business Context**
+# **Business Context**
 
 Chestnut Ridge operates across multiple product categories and sales channels. As customer needs diversified, a one-size-fits-all marketing strategy became ineffective. The objective of this project is to:
 
@@ -14,11 +14,11 @@ Chestnut Ridge operates across multiple product categories and sales channels. A
 
 - Recommend data-backed marketing priorities
 
-**Data Description**
+# **Data Description**
 
 The dataset contains 200 customer survey responses with the following variables:
 
-1. **Store Attribute Ratings (1–10 scale):**
+## 1. **Store Attribute Ratings (1–10 scale):**
 
 * Variety of choice
 
@@ -32,13 +32,13 @@ The dataset contains 200 customer survey responses with the following variables:
 
 - Return policy
 
-2. **Demographics:**
+## 2. **Demographics:**
 
 + Annual income (USD, thousands)
 
 - Age
 
-**Project Methodology**
+# **Project Methodology**
 
 The analysis follows a structured workflow:
 
@@ -60,7 +60,7 @@ The analysis follows a structured workflow:
 
 Both 3-cluster and 4-cluster solutions were tested, with validation supporting a 4-cluster solution as optimal.
 
-**Key Findings**
+# **Key Findings**
 
 The analysis identified four distinct customer segments:
 
@@ -74,7 +74,7 @@ The analysis identified four distinct customer segments:
 
 Each segment displays clearly differentiated preferences, income levels and ages, confirming meaningful market heterogeneity.
 
-**Strategic Insights**
+# **Strategic Insights**
 
 Using the McKinsey GE Matrix, segments were evaluated on:
 
@@ -82,7 +82,7 @@ Using the McKinsey GE Matrix, segments were evaluated on:
 
 2. Segment attractiveness (size, growth, profitability)
 
-**Strategic Recommendations:**
+## **Strategic Recommendations:**
 
 - **Invest & Grow:** Value-Conscious Traditionalists
 
@@ -92,7 +92,7 @@ Using the McKinsey GE Matrix, segments were evaluated on:
 
 The findings emphasize alignment between analytics and strategic decision-making, rather than segmentation for its own sake.
 
-**Tools & Technologies**
+# **Tools & Technologies**
 
 - **Language:** R
 
