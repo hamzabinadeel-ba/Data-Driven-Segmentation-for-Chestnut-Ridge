@@ -9,8 +9,8 @@ This project applies a data-driven customer segmentation framework to a multi-ch
 Chestnut Ridge operates across multiple product categories and sales channels. As customer needs diversified, a one-size-fits-all marketing strategy became ineffective. The objective of this project is to:
 
 - Identify meaningful customer segments
-* Understand differences in preferences and demographics
-+ Evaluate which segments are most attractive to target
+- Understand differences in preferences and demographics
+- Evaluate which segments are most attractive to target
 - Recommend data-backed marketing priorities
 
 # **Data Description**
@@ -67,16 +67,16 @@ Using the McKinsey GE Matrix, segments were evaluated on:
 ## **Recommendations:**
 
 - **Invest and Grow:** Value-Conscious Traditionalists
-* **Manage Selectively:** Budget-Focused Pragmatists
-+ **Develop Long-Term:** Service-Driven Tech Explorers and Experience-Oriented Loyalists
+- **Manage Selectively:** Budget-Focused Pragmatists
+- **Develop Long-Term:** Service-Driven Tech Explorers and Experience-Oriented Loyalists
 
 The findings emphasize alignment between analytics and strategic decision-making, rather than segmentation for its own sake.
 
 # **Tools and Technologies**
 
 - **Language:** R
-* **Libraries:** tidyverse, NbClust, flexclust, car
-+ **Techniques:** Hierarchical clustering (Ward.D2), K-means clustering, Cluster validation, Segment profiling, Strategic matrix analysis
+- **Libraries:** tidyverse, NbClust, flexclust, car
+- **Techniques:** Hierarchical clustering (Ward.D2), K-means clustering, Cluster validation, Segment profiling, Strategic matrix analysis
 
 # Key Takeaway
 
