@@ -1,6 +1,6 @@
 **Project Overview**
 
-This project applies a data-driven customer segmentation framework to a multi-channel retail brand, Chestnut Ridge. Using survey-based customer data, the analysis identifies distinct customer segments and translates statistical insights into actionable marketing strategy. The project combines unsupervised machine learning, rigorous validation and strategic evaluation tools to support informed targeting decisions.
+This project applies a data-driven customer segmentation framework to a multi-channel retail brand called Chestnut Ridge. Using survey-based customer data, the analysis identifies distinct customer segments and translates statistical insights into actionable marketing strategy. The project combines unsupervised machine learning, rigorous validation and strategic evaluation tools to support informed targeting decisions.
 
 **Business Context**
 
@@ -40,7 +40,7 @@ The dataset contains 200 customer survey responses with the following variables:
 
 **Project Methodology**
 
-The analysis follows a structured, reproducible workflow:
+The analysis follows a structured workflow:
 
 - Data inspection and descriptive statistics
 
@@ -68,11 +68,11 @@ The analysis identified four distinct customer segments:
 
 * **Budget-Focused Pragmatists:** Highly price-sensitive customers with low long-term loyalty potential.
 
-+ **Service-Driven Tech Explorers:** Small but affluent segment valuing electronics, service quality, and return policies.
++ **Service-Driven Tech Explorers:** Small but affluent segment valuing electronics, service quality and return policies.
 
 - **Experience-Oriented Loyalists:** High-income, older customers prioritising premium service and loyalty-driven experiences.
 
-Each segment displays clearly differentiated preferences, income levels, and ages, confirming meaningful market heterogeneity.
+Each segment displays clearly differentiated preferences, income levels and ages, confirming meaningful market heterogeneity.
 
 **Strategic Insights**
 
