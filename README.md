@@ -51,8 +51,8 @@ Both 3-cluster and 4-cluster solutions were tested, with the majority rule (8 in
 The analysis identified four distinct customer segments:
 
 - **Value-Conscious Traditionalists:** Large segment prioritising product variety and tangible goods (customers: 94, share: 47%).
-* **Budget-Focused Pragmatists:** Highly price-sensitive customers with low long-term loyalty potential (customers: 60, share: 30%).
-+ **Service-Driven Tech Explorers:** Small but affluent segment valuing electronics, service quality and return policies (customers: 17, share: 8.5%).
+- **Budget-Focused Pragmatists:** Highly price-sensitive customers with low long-term loyalty potential (customers: 60, share: 30%).
+- **Service-Driven Tech Explorers:** Small but affluent segment valuing electronics, service quality and return policies (customers: 17, share: 8.5%).
 - **Experience-Oriented Loyalists:** High-income, older customers prioritising premium service and loyalty-driven experiences (customers: 29, share: 14.5%).
 
 Each segment displays clearly differentiated preferences, income levels and ages, confirming meaningful market heterogeneity.
