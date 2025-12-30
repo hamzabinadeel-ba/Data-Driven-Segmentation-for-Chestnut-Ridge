@@ -12,31 +12,31 @@ Chestnut Ridge operates across multiple product categories and sales channels. A
 
 + Evaluate which segments are most attractive to target
 
-Recommend data-backed marketing priorities
+- Recommend data-backed marketing priorities
 
-Data Description
+**Data Description**
 
 The dataset contains 200 customer survey responses with the following variables:
 
-Store Attribute Ratings (1–10 scale)
+**Store Attribute Ratings (1–10 scale):**
 
-Variety of choice
+* Variety of choice
 
-Electronics
++ Electronics
 
-Furniture
+- Furniture
 
-Quality of service
+* Quality of service
 
-Low prices
++ Low prices
 
-Return policy
+- Return policy
 
-Demographics
+**Demographics:**
 
-Annual income (USD, thousands)
++ Annual income (USD, thousands)
 
-Age
+- Age
 
 Methodology
 
