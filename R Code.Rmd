@@ -1,6 +1,5 @@
-# Hamza Bin Adeel/740099526
-
-# Task 1:
+# R Code
+# Dataset Inspection
 
 library(tidyverse)
 
@@ -10,7 +9,7 @@ glimpse(retailer)
 
 summary(retailer)
 
-# Task 2:
+# Descriptive Statistics
 
 retailer_norm <- scale(retailer[, -1]) %>% as_tibble()
 
@@ -20,7 +19,7 @@ sd(retailer_norm$low_prices)
 
 summary(retailer_norm)
 
-# Task 3: 
+# Z-score Standardisation 
 
 store_attributes <- retailer %>%
 
@@ -34,38 +33,31 @@ sd(store_attributes_norm$quality_of_service)
 
 summary(store_attributes_norm)
 
-# Task 4:
+# Euclidean Distance
 
 distances <- dist(store_attributes_norm, method = "euclidean")
 
 as.matrix(distances)[1:5, 1:5]
 
-# Task 5: 
+# Setting the seed 
 
 set.seed(123)
 
-# Task 6: 
+# Hierarchical clustering algorithm
 
 hc <- hclust(distances, method = "ward.D2")
 
-# Task 7: 
+# Dendogram plotting 
 
 plot(hc)
 
-# Task 8:
+# 3-cluster solution
 
 rect.hclust(hc, k = 3, border = "red")
 
-# Task 9: 
-
 hc3 <- cutree(hc, k = 3)
-
 table(hc3)
-
-# Task 10: 
-
 set.seed(123)
-
 kmeans_3 <- kmeans(store_attributes_norm,
                    centers = 3,
                    iter.max = 1000,
@@ -73,7 +65,7 @@ kmeans_3 <- kmeans(store_attributes_norm,
 
 kmeans_3$size
 
-# Task 11:
+# 4-cluster solution
 
 hc4 <- cutree(hc, k = 4)
 
@@ -85,8 +77,6 @@ hc4 <- cutree(hc, k = 4)
 
 table(hc4)
 
-# Task 12:
-
 set.seed(123)
 
 kmeans_4 <- kmeans(store_attributes_norm,
@@ -96,7 +86,7 @@ kmeans_4 <- kmeans(store_attributes_norm,
 
 table(kmeans_4$cluster)
 
-# Task 13:
+# Choosing the correct cluster
 
 library(NbClust)
 
@@ -108,7 +98,7 @@ set.seed(1990)
 
 NbClust(data = store_attributes_norm[, 1:6], min.nc = 3,  max.nc = 15, index = "all", method = "ward.D2") $Best.ncBest
 
-# Task 14: 
+# Generating segment profile 
 
 library(flexclust)
 
@@ -126,7 +116,7 @@ hc4_flex <- as.kcca(hc, store_attributes_norm, k = 4)
 
 barchart(hc4_flex)
 
-# Task 15:
+# Segment Exploration
 
 retailer %>%
   mutate(cluster = factor(hc4)) %>%
@@ -135,6 +125,7 @@ retailer %>%
     mean_income = mean(income),
     mean_age = mean(age)
   )
+
 
 
 
