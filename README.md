@@ -38,78 +38,64 @@ The dataset contains 200 customer survey responses with the following variables:
 
 - Age
 
-Methodology
+**Project Methodology**
 
 The analysis follows a structured, reproducible workflow:
 
-Data inspection and descriptive statistics
+- Data inspection and descriptive statistics
 
-Z-score normalization to address scale differences
+* Z-score normalization to address scale differences
 
-Euclidean distance calculation
++ Euclidean distance calculation
 
-Hierarchical clustering (Ward.D2) with dendrogram analysis
+- Hierarchical clustering (Ward.D2) with dendrogram analysis
 
-K-means clustering for solution robustness
+* K-means clustering for solution robustness
 
-Cluster validation using NbClust
++ Cluster validation using NbClust
 
-Segment profiling using attitudinal and demographic means
+- Segment profiling using attitudinal and demographic means
 
-Strategic evaluation using the McKinsey GE Matrix
+* Strategic evaluation using the McKinsey GE Matrix
 
 Both 3-cluster and 4-cluster solutions were tested, with validation supporting a 4-cluster solution as optimal.
 
-Key Findings
+**Key Findings**
 
 The analysis identified four distinct customer segments:
 
-Value-Conscious Traditionalists
-Large segment prioritising product variety and tangible goods.
+- **Value-Conscious Traditionalists:** Large segment prioritising product variety and tangible goods.
 
-Budget-Focused Pragmatists
-Highly price-sensitive customers with low long-term loyalty potential.
+* **Budget-Focused Pragmatists:** Highly price-sensitive customers with low long-term loyalty potential.
 
-Service-Driven Tech Explorers
-Small but affluent segment valuing electronics, service quality, and return policies.
++ **Service-Driven Tech Explorers:** Small but affluent segment valuing electronics, service quality, and return policies.
 
-Experience-Oriented Loyalists
-High-income, older customers prioritising premium service and loyalty-driven experiences.
+- **Experience-Oriented Loyalists:** High-income, older customers prioritising premium service and loyalty-driven experiences.
 
 Each segment displays clearly differentiated preferences, income levels, and ages, confirming meaningful market heterogeneity.
 
-Strategic Insights
+**Strategic Insights**
 
 Using the McKinsey GE Matrix, segments were evaluated on:
 
-Business strength (internal capabilities)
+- Business strength (internal capabilities)
 
-Segment attractiveness (size, growth, profitability)
+* Segment attractiveness (size, growth, profitability)
 
-Strategic Recommendations:
+**Strategic Recommendations:**
 
-Invest & Grow: Value-Conscious Traditionalists
+- **Invest & Grow:** Value-Conscious Traditionalists
 
-Manage Selectively: Budget-Focused Pragmatists
+* **Manage Selectively:** Budget-Focused Pragmatists
 
-Develop Long-Term: Service-Driven Tech Explorers & Experience-Oriented Loyalists
++ **Develop Long-Term:** Service-Driven Tech Explorers & Experience-Oriented Loyalists
 
 The findings emphasize alignment between analytics and strategic decision-making, rather than segmentation for its own sake.
 
-Tools & Technologies
+**Tools & Technologies**
 
-Language: R
+- **Language:** R
 
-Libraries: tidyverse, NbClust, flexclust, car
+* **Libraries:** tidyverse, NbClust, flexclust, car
 
-Techniques:
-
-Hierarchical clustering (Ward.D2)
-
-K-means clustering
-
-Cluster validation
-
-Segment profiling
-
-Strategic matrix analysis
++ **Techniques:** Hierarchical clustering (Ward.D2), K-means clustering, Cluster validation, Segment profiling, Strategic matrix analysis
