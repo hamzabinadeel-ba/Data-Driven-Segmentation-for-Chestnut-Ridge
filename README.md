@@ -4,7 +4,7 @@
 
 This project applies a data-driven customer segmentation framework to a multi-channel retail brand called Chestnut Ridge. Using 200 customer survey responses, the analysis identifies distinct customer segments and translates statistical insights into actionable marketing strategy. The project combines unsupervised machine learning, rigorous validation and strategic evaluation tools to support informed targeting decisions.
 
-# **Business Context**
+# **Project Context**
 
 Chestnut Ridge operates across multiple product categories and sales channels. As customer needs diversified, a one-size-fits-all marketing strategy became ineffective. The objective of this project is to:
 
